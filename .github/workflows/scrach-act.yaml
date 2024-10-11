@@ -13,6 +13,6 @@ jobs:
     steps:
       - run : echo "checkout repo"
       - name : checkout Repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
       - run: printenv
       - run: echo "this is the env ${{env.PROJECT_NAME}} AND {{env.PROJECT_NAME}}"
